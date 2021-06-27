@@ -8,8 +8,8 @@ OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"
 
 api_key = ""
 weather_parameters = {
-    "lat": 56.501041,
-    "lon": 84.992455,
+    "lat": ,
+    "lon": ,
     "appid": api_key,
     "exclude": "current,minutely,daily,alerts"
 }
