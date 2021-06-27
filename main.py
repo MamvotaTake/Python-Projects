@@ -6,7 +6,7 @@ import requests
 
 OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"
 
-api_key = "6cb1b6ee5ee846b1041fa081c3c5b66a"
+api_key = ""
 weather_parameters = {
     "lat": 56.501041,
     "lon": 84.992455,
@@ -14,8 +14,8 @@ weather_parameters = {
     "exclude": "current,minutely,daily,alerts"
 }
 
-my_email = "tiripamwepo@gmail.com"
-password = "2Cotx123"
+my_email = ""
+password = ""
 
 response = requests.get(OWM_ENDPOINT, params=weather_parameters)
 response.raise_for_status()
@@ -45,11 +45,11 @@ with smtplib.SMTP("smtp.gmail.com") as connection:
 
         connection.sendmail(
             from_addr=my_email,
-            to_addrs="tooyoungmamvota@gmail.com",
+            to_addrs="",
             msg=f"Subject:Rain Alert\n\n{name} Take bring an umbrella it will be raining today\n{quote}")
     else:
 
         connection.sendmail(
             from_addr=my_email,
-            to_addrs="tooyoungmamvota@gmail.com",
+            to_addrs="",
             msg=f"Subject:Rain Alert\n\n{name} Take No rain today\n{quote}")
