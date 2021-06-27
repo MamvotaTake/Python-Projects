@@ -37,7 +37,7 @@ with open("quotes.txt") as quotes_file:
 name = "CEO"
 today = datetime.now()
 hour = today.hour
-
+#for gmail (smtp.gmail.com)
 with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.starttls()
     connection.login(user=my_email, password=password)
